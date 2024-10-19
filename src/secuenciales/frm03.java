@@ -9,25 +9,26 @@ import javax.swing.JLabel;
 import javax.swing.JTextField;
 
 public class frm03 extends JFrame {
-	private static final long serialVersionUID = 1L;
-	JTextField txtGigabytes, txtMegabytes, txtKilobytes, txtBytes;
+    private static final long serialVersionUID = 1L;
+    JTextField txtTramoKm, txtTramoPies, txtTramoMillas;
+    JLabel lblResultadoMetros, lblResultadoYardas;
 
-	public static void main(String[] args) {
-		EventQueue.invokeLater(new Runnable() {
-			public void run() {
-				try {
-					frm05 frame = new frm03();
-					frame.setVisible(true);
-				} catch (Exception e) {
-					e.printStackTrace();
-				}
-			}
-		});
-	}
+    public static void main(String[] args) {
+        EventQueue.invokeLater(new Runnable() {
+            public void run() {
+                try {
+                    frm03 frame = new frm03();
+                    frame.setVisible(true);
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+    }
 
-	public frm03() {
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 300, 400);
+    public frm03() {
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(0, 0, 350, 300);
         setLayout(null);
         setLocationRelativeTo(null);
 
@@ -91,4 +92,3 @@ public class frm03 extends JFrame {
         lblResultadoYardas.setText("Total en Yardas: " + totalYardas);
     }
 }
-
